@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panoramic Viewer</title>
+    <!-- Include Pannellum library -->
+    <script type="text/javascript" src="pannellum.js"></script>
+    <!-- Include Pannellum CSS -->
+    <link rel="stylesheet" type="text/css"pannellum.css">
+</head>
+<body>
+    <!-- Pannellum viewer container -->
+    <div id="panorama"></div>
+    
+    <script>
+        // Initialize Pannellum viewer
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "PANORAMA.jpg", // 
+        });
+    </script>
+</body>
+</html>
